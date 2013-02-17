@@ -1,0 +1,209 @@
+/*===================*/
+/*=== Main Styles ===*/
+/*===================*/
+body {
+	font: 1em Palatino, “Palatino Linotype”, Georgia, Times, “Times New Roman”, serif;
+	color: #000;
+	background: #fafafa;
+	line-height: 1.5em;
+	max-width: 800px;
+	margin: 0 auto;
+	border: 1px solid #eee; 
+}
+a, a:visited {
+	color: #777;
+	text-decoration: none;
+	font-style: italic;
+}
+a:hover, a:active {
+	color: #000;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Helvetica Neue", Helvetica, sans-serif; 
+	line-height: 1.2;
+	margin-bottom: 0.6em;
+	font-style: italic;
+}
+h1 {
+	font-size: 2.2em;
+}
+h2 {
+	font-size: 1.9em;
+}
+h3 {
+	font-size: 1.7em;
+	margin-top: 2em;
+}
+h4 {
+	font-size: 1.5em;
+}
+h5 {
+	font-size: 1.3em;
+}
+h6 {
+	font-size: 1.2em;
+}
+p {
+	text-indent:30px;
+	margin-bottom: 1em;
+}
+
+ol, ul {
+	padding-left: 30px;
+	margin-bottom: 1em;
+}
+
+b, strong {
+	font-weight: bold;
+}
+i, em {
+	font-style: italic;
+}
+u {
+	text-decoration: underline;
+}
+abbr, acronym {
+	cursor: help;
+	border-bottom: .1em dotted;
+}
+td, td img { vertical-align: top; }
+sub { vertical-align: sub; font-size: smaller; }
+sup { vertical-align: super; font-size: smaller; }
+
+code {
+	text-indent:0;
+	font-family: Courier,"Courier New",Monaco,Tahoma;
+	background: #F0F0F0;
+	color: #000;
+	padding: 0px 2px;
+	overflow: auto;
+}
+pre {
+	text-indent:0;
+	background: #F0F0F0;
+	padding: 20px;
+	margin-bottom: 1em;
+}
+code p, pre p { text-indent:0; }
+blockquote {
+	font-style: italic;
+	margin: 0 0 1em 15px;
+	padding-left: 10px;
+	border-left: 5px solid #999;
+}
+
+/* hand cursor on clickable input elements */
+label, input[type=button], input[type=submit], button { cursor: pointer; }
+/* make buttons play nice in IE:   
+    www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
+button {  width: auto; overflow: visible; }
+
+table { margin-bottom: 1em; }
+th { 
+	font-weight: bold;
+	padding: 0 5px; 
+}
+td { padding: 0 5px; }
+
+/*====================*/
+/*=== Other Styles ===*/
+/*====================*/
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+.cf:after {
+    clear:both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+    zoom:1;
+}
+.left { float: left; }
+.right { float: right; }
+.black { color: #000; }
+.clear { clear: both; }
+a.gray { color: #333; border-bottom: 1px solid #eee; font-style: italic; }
+/* ------------ */
+
+/*=== PluXML specific ===*/
+.content {
+	margin: 0;
+	padding: 10px 40px 40px 40px ; 
+	background: #fff;
+}
+
+/* header */
+.header a { text-decoration: none; }
+.blog-title { font-family: Consolas, “Lucida Console”, Monaco, monospace; text-indent: 0px; }
+h1#title a { width: 250px; float: left; font-size: 0.6em; font-style: normal; color: #000; margin: 0; padding: 19px; }
+.title a { color: #000; font-style: normal;  }
+/* menu */
+.menu { text-align: left;  }
+.menu a { display: block; padding: 1px; float: right; }
+.menu { width: 400px; float: right; }
+/* content */
+#pagination { text-align: center; }
+.article { margin-bottom: 80px; }
+.art-infos { font-size: 0.9em; padding: 10px; border-top: 1px solid #eee; width: 80%; margin: auto; text-align: right; }
+.twenty {
+	width: 20%;
+}
+.eighty { width: 80%; }
+.comment {
+	padding: 40px;
+	border-bottom: 20px solid #eee; 
+}
+.infos-comment {
+	font-size: 0.9em; 
+	text-align: right;
+	color: #333;
+}
+/* form */
+#form form div { padding: 10px; }
+#form form div label { width: 100px; display: block; margin-left: 150px; }
+#form form div input[type="text"] { width: 300px; padding: 5px; }
+#form form div input[type="submit"] { margin-left: 270px;  padding: 20px; }
+#form form div textarea { width: 300px; padding: 5px; height: 300px; }
+#form form #id_rep { width: 100px; }
+#form h4 { margin: 40px; }
+#form input, textarea { border: 1px solid #ccc; }
+
+img { max-width: 100%; }
+/* footer */
+#footer { margin-top: 80px; font-size: 0.9em; padding: 10px;  width: 80%; margin: auto; text-align: right; }
+
+/* #Media Queries
+================================================== */
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	body { border: 0; margin: 0; padding: 0; font-size: 0.9em; }
+	.content { padding: 10px; border: 0; }
+	#form form div { }
+	#form form div label { display: inline;  text-align: left; padding: 0; margin: 0; }
+	#form form div input[type="text"] { width: 100%; padding: 5px; }
+	#form form div input[type="submit"] { padding: 20px; margin: 0; }
+	#form form div textarea { width: 100%; padding: 5px; height: 300px; }
+	#form form #id_rep { width: 100px; }
+	#form h4 { margin: 40px; }
+	#form input, textarea { border: 1px solid #ccc; }
+
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {}
