@@ -4,7 +4,7 @@
 body {
 	font: 1em Palatino, “Palatino Linotype”, Georgia, Times, “Times New Roman”, serif;
 	color: #000;
-	background: #fafafa;
+	background: #fafafa url('img/lightpaperfibers.png');
 	line-height: 1.5em;
 	max-width: 800px;
 	margin: 0 auto;
@@ -68,6 +68,7 @@ abbr, acronym {
 	cursor: help;
 	border-bottom: .1em dotted;
 }
+
 td, td img { vertical-align: top; }
 sub { vertical-align: sub; font-size: smaller; }
 sup { vertical-align: super; font-size: smaller; }
@@ -93,7 +94,11 @@ blockquote {
 	padding-left: 10px;
 	border-left: 5px solid #999;
 }
+input, textarea { 
 
+	background: #fafafa url('img/linedpaper.png');
+
+}
 /* hand cursor on clickable input elements */
 label, input[type=button], input[type=submit], button { cursor: pointer; }
 /* make buttons play nice in IE:   
@@ -103,10 +108,9 @@ button {  width: auto; overflow: visible; }
 table { margin-bottom: 1em; }
 th { 
 	font-weight: bold;
-	padding: 0 5px; 
+	padding:10px; 
 }
-td { padding: 0 5px; }
-
+td { padding: 5px; }
 /*====================*/
 /*=== Other Styles ===*/
 /*====================*/
@@ -166,10 +170,10 @@ h1#title a { width: 250px; float: left; font-size: 0.6em; font-style: normal; co
 }
 /* form */
 #form form div { padding: 10px; }
-#form form div label { width: 100px; display: block; margin-left: 150px; }
-#form form div input[type="text"] { width: 300px; padding: 5px; }
+#form form div label { width: 150px; display: block; margin-left: 100px; float: left;  padding: 10px; }
+#form form div input[type="text"] { width: 300px; padding: 5px; margin: 10px; }
 #form form div input[type="submit"] { margin-left: 270px;  padding: 20px; }
-#form form div textarea { width: 300px; padding: 5px; height: 300px; }
+#form form div textarea { width: 300px; padding: 5px; height: 300px; margin: 10px; }
 #form form #id_rep { width: 100px; }
 #form h4 { margin: 40px; }
 #form input, textarea { border: 1px solid #ccc; }
