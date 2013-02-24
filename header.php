@@ -1,5 +1,5 @@
 <?php if(!defined('PLX_ROOT')) exit; ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php $plxShow->defaultLang() ?>" lang="<?php $plxShow->defaultLang() ?>> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php $plxShow->defaultLang() ?>" lang="<?php $plxShow->defaultLang() ?>> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php $plxShow->defaultLang() ?>" lang="<?php $plxShow->defaultLang() ?>> <![endif]-->
@@ -48,12 +48,12 @@
 
 	</script>
 </head>
+<body>
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('pre > code').each(function(i, e) {hljs.highlightBlock(e, '    ')});
 		});
 	</script>
-<body>
 <div class="content">
 <div class="clear"></div>
 <h1 id="title"><?php $plxShow->mainTitle('link'); ?></h1>

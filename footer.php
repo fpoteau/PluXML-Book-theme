@@ -7,7 +7,7 @@
 				<?php $plxShow->lang('IN') ?> <?php $plxShow->chrono(); ?>
 				<?php $plxShow->httpEncoding() ?>
 				 - 
-				<a class="top" href="<?php echo $plxShow->urlRewrite('#top') ?>" title="<?php $plxShow->lang('GOTO_TOP') ?>"><?php $plxShow->lang('TOP') ?></a> - <a href="http://francoispoteau.com/?static2/contact">Contact</a></span>
+				<a class="top" href="<?php echo $plxShow->urlRewrite('#top') ?>" title="<?php $plxShow->lang('GOTO_TOP') ?>"><?php $plxShow->lang('TOP') ?></a> - <a href="http://francoispoteau.com/?static2/contact">Contact</a>
 				
 			</p>
 
